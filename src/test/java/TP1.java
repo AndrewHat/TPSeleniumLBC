@@ -60,7 +60,7 @@ public class TP1 {
         wait.until(ExpectedConditions.elementToBeClickable(elemCSS)).click();
         WebElement cartUpdate = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("gh-cart-n")));
         String cartNumber = cartUpdate.getText();
-        
+
         driver.findElement(By.cssSelector(".gh-cart-icon")).click();
         WebElement we = driver.findElement(By.cssSelector("[data-test-id=\"cart-bucket\"] div.image-display"));
         Boolean isNotEmptyCart = we != null;
